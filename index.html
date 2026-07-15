@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/dist/output.css">
+         <script src="https://cdn.tailwindcss.com"></script>
     <title>Website project template</title>
 </head>
 <script>
@@ -17,13 +18,16 @@
 
     window.onload = () => {
         loadComponents('header', 'src/sections/header.html');
+        loadComponents('content','src/sections/content.html');
         loadComponents('hero', 'src/sections/hero.html');
         loadComponents('contact', 'src/sections/contact.html');
         loadComponents('footer', 'src/sections/footer.html');
     }
 </script>
-<body>
+<body class="bg-[#EFECEA]">
+
     <div id="header"></div>
+    <div id="content"></div>
     <div id="hero"></div>
     <div id="contact"></div>
     <div id="footer"></div>
