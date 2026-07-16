@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/dist/output.css">
          <script src="https://cdn.tailwindcss.com"></script>
-    <title>Website project template</title>
+    <title>About Us</title>
 </head>
 <script>
     const loadComponents = (id, url) =>  {
@@ -15,21 +15,14 @@
             document.getElementById(id).innerHTML = html;
         });
     }
- 
+
     window.onload = () => {
-        loadComponents('header', 'src/sections/header.html');
-        loadComponents('content','src/sections/content.html');
-        loadComponents('hero', 'src/sections/hero.html');
-        loadComponents('contact', 'src/sections/contact.html');
-        loadComponents('footer', 'src/sections/footer.html');
+        loadComponents('hero-section', 'src/sections/Page2/hero-section.html');
+
     }
 </script>
-<body class="bg-[#EFECEA]">
+<body class="bg-[#EFECEA] font-['Outfit'] text-[#00672E]">
 
-    <div id="header"></div>
-    <div id="content"></div>
     <div id="hero-section"></div>
-    <div id="contact"></div>
-    <div id="footer"></div>
 </body>
 </html>
