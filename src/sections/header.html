@@ -1,13 +1,10 @@
 <div class="fixed top-0 left-0 w-full bg-white border-b z-50 h-auto font-outfit">
   <div class="flex justify-between items-center lg:items-start p-2 pt-8 lg:pt-4 px-5 gap-2">
-
     <div class="flex flex-col items-start leading-tight">
       <p class="text-[1.5rem] font-['Outfit']">DE</p>
       <p class="text-[1.5rem] font-['Outfit']">EN</p>
     </div>
-
     <h1 class="text-[2rem] font-semibold font-['Outfit']">Baumeister</h1>
-
     <div class="text-right text-[1.5rem] font-['Outfit'] hidden lg:block">
       <ul>
         <li><a href="#">About</a></li>
@@ -16,11 +13,9 @@
         <li><a href="#">Contact</a></li>
       </ul>
     </div>
-
     <!-- Toggle the menu to see the menu list -->
     <div class="lg:hidden">
       <input type="checkbox" id="menu-toggle" class="peer hidden" />
-
       <label
         for="menu-toggle"
         class="w-12 h-12 relative overflow-hidden flex items-center justify-center cursor-pointer select-none z-50 peer-checked:[&>#menubar]:hidden peer-checked:[&>#menu-close]:block"
@@ -38,17 +33,15 @@
             fill="currentColor"
           />
         </svg>
-
         <img
           id="menubar"
           src="/src/assests/images/menu.webp"
           alt="Open Menu"
-          class="absolute w-10 h-5 object-contain"
+          class="absolute w-10 h-5 object-contain md:!block"
         />
-        <span id="menu-close" class="absolute text-white font-extrabold hidden">X</span>
+        <span id="menu-close" class="absolute text-white font-extrabold hidden md:!hidden">X</span>
       </label>
-
-      <div class="absolute top-24 left-0 right-0 p-6 hidden peer-checked:block z-40">
+      <div class="absolute top-24 left-0 right-0 p-6 hidden peer-checked:block md:!hidden z-40">
         <ul class="flex flex-col items-center gap-5 font-medium text-[2rem] text-[#00672E]">
           <li><a href="#">About</a></li>
           <li><a href="#">Services</a></li>
@@ -57,6 +50,5 @@
         </ul>
       </div>
     </div>
-
   </div>
 </div>
