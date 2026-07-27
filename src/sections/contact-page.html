@@ -23,33 +23,45 @@
         <li><a href="/src/sections/page2-content.html">Contact</a></li>
       </ul>
     </div>
-    <div class="lg:hidden">
-      <input type="checkbox" id="menu-toggle" class="peer hidden" />
-      <label
-        for="menu-toggle"
-        class="w-12 h-12 relative overflow-hidden flex items-center justify-center cursor-pointer select-none z-50 peer-checked:[&>#menubar]:hidden peer-checked:[&>#menu-close]:block"
-      >
-        <svg
-          width="39"
-          height="23"
-          viewBox="0 0 39 23"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          class="absolute w-full h-full object-contain text-green"
-        >
-          <path
-            d="M1.10811 2.11842L0 12.1053L8.64865 21.3493L31.5135 23L39 12.0227L28 0L1.10811 2.11842Z"
-            fill="currentColor"
-          />
-        </svg>
-        <img
-          id="menubar"
-          src="/src/assests/images/menu.webp"
-          alt="Open Menu"
-          class="absolute w-10 h-5 object-contain md:!block"
-        />
-        <span id="menu-close" class="absolute text-white font-extrabold hidden md:!hidden">X</span>
-      </label>
+     <div class="lg:hidden">
+  <input type="checkbox" id="menu-toggle" class="peer hidden" />
+  <label
+    for="menu-toggle"
+    class="w-12 h-12 relative overflow-hidden flex items-center justify-center cursor-pointer select-none z-50 peer-checked:[&>#menubar]:hidden peer-checked:[&>#menu-close]:block"
+  >
+    <svg
+      width="39"
+      height="23"
+      viewBox="0 0 39 23"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      class="absolute w-full h-full object-contain text-[#00672E]"
+    >
+      <path
+        d="M1.10811 2.11842L0 12.1053L8.64865 21.3493L31.5135 23L39 12.0227L28 0L1.10811 2.11842Z"
+        fill="currentColor"
+      />
+    </svg>
+    <svg
+      id="menubar"
+      class="absolute w-5 h-5 text-white z-10 md:!block"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2.5"
+      stroke-linecap="round"
+      viewBox="0 0 24 24"
+    >
+      <path d="M4 6h16M4 12h16M4 18h16" />
+    </svg>
+    <span
+      id="menu-close"
+      class="absolute hidden text-white font-bold text-xl z-10 md:!hidden"
+    >
+      ✕
+    </span>
+
+  </label>
+</div>
       <div class="absolute top-24 left-0 right-0 p-6 hidden peer-checked:block md:!hidden z-40">
         <ul class="flex flex-col items-center gap-5 font-medium text-[2rem] text-[#00672E] text-[#00672E]">
           <li><a href="#">About</a></li>
