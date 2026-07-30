@@ -1,4 +1,54 @@
-<div>
-    <h1 class="text-blue-800">Header</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quibusdam.</p>
+﻿<div class="fixed top-0 left-0 w-full z-50 h-auto font-outfit  ">
+  <div class="flex justify-between items-center lg:items-start p-2 pt-8 lg:pt-4 px-5 gap-2 ">
+    <div class="flex flex-col items-start leading-tight">
+      <p class="text-[1.5rem] font-['Outfit']">DE</p>
+      <p class="text-[1.5rem] font-['Outfit']">EN</p>
+    </div>
+    <h1 class="text-[2rem] font-semibold font-['Outfit'] hidden lg:block md:block">Baumeister</h1>
+    <img src="src/assests/images/baumeister.png" alt="" class="lg:hidden md:hidden">
+    <div class="text-right text-[1.5rem] font-['Outfit'] hidden lg:block">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#service">Services</a></li>
+        <li><a href="#refences">References</a></li>
+        <li><a href="/src/sections/page2-section1.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="lg:hidden">
+      <input type="checkbox" id="menu-toggle" class="peer hidden" />
+      <label
+        for="menu-toggle"
+        class="w-12 h-12 relative overflow-hidden flex items-center justify-center cursor-pointer select-none z-50 peer-checked:[&>#menubar]:hidden peer-checked:[&>#menu-close]:block"
+      >
+        <svg
+          width="39"
+          height="23"
+          viewBox="0 0 39 23"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="absolute w-full h-full object-contain text-green"
+        >
+          <path
+            d="M1.10811 2.11842L0 12.1053L8.64865 21.3493L31.5135 23L39 12.0227L28 0L1.10811 2.11842Z"
+            fill="currentColor"
+          />
+        </svg>
+        <img
+          id="menubar"
+          src="/src/assests/images/menu.webp"
+          alt="Open Menu"
+          class="absolute w-10 h-5 object-contain md:!block"
+        />
+        <span id="menu-close" class="absolute text-white font-extrabold hidden md:hidden">X</span>
+      </label>
+      <div class="absolute top-24 left-0 right-0 p-6 hidden peer-checked:block md:hidden z-40">
+        <ul class="flex flex-col items-center gap-5 font-medium text-[2rem] text-[#00672E]">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">References</a></li>
+          <li><a href="/src/sections/page2-section1.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </div>
