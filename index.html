@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/dist/output.css">
-    <title>Ojemba</title>
+    <title>Website project template</title>
 </head>
 <script>
     const loadComponents = (id, url) =>  {
@@ -16,16 +16,20 @@
     }
 
     window.onload = () => {
+
         loadComponents('header', 'src/sections/header.html');
-        loadComponents('hero', 'src/sections/hero.html');
-        loadComponents('contact', 'src/sections/contact.html');
+        
+        loadComponents('page1-section1', 'src/sections/page1-section1.html');
+        loadComponents('content', 'src/sections/content.html');
+        loadComponents('home-section4.html', 'src/sections/home-section4.html');
         loadComponents('footer', 'src/sections/footer.html');
-    }
+}
 </script>
-<body>
+<body class="bg-[#EFECEA]">
     <div id="header"></div>
-    <div id="hero"></div>
-    <div id="contact"></div>
+    <div id="page1-section1"></div>
+    <div id="content"></div>
+    <div id="home-section4.html"></div>
     <div id="footer"></div>
 </body>
 </html>
